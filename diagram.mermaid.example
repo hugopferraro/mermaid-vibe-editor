@@ -1,0 +1,8 @@
+flowchart TD
+    A[Start] --> B{Is input valid?}
+    B -->|Yes| C[Process data]
+    B -->|No| D[Show error]
+    C --> E[Save result]
+    D --> F[Ask for new input]
+    F --> B
+    E --> G[End]
